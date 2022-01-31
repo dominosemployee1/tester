@@ -8,6 +8,7 @@ local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 
 --Properties:
 
@@ -16,19 +17,18 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-Frame.Position = UDim2.new(0.0517403558, 0, 0.0539877415, 0)
-Frame.Size = UDim2.new(0, 209, 0, 213)
+Frame.Position = UDim2.new(0.0517403558, 0, 0.0539877303, 0)
+Frame.Size = UDim2.new(0, 207, 0, 243)
 
 TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Position = UDim2.new(0.0191387553, 0, 0.591549277, 0)
+TextButton.Position = UDim2.new(0.0143078379, 0, 0.517475247, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Cool stuff"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 28.000
 TextButton.MouseButton1Down:connect(function()
-
 	local args = {
 		[1] = workspace.Prison_ITEMS.giver:FindFirstChild("Remington 870").ITEMPICKUP
 	}
@@ -59,9 +59,10 @@ TextButton.MouseButton1Down:connect(function()
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+
 TextLabel.Parent = TextButton
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Position = UDim2.new(-0.0199999996, 0, -2.51999998, 0)
+TextLabel.Position = UDim2.new(-0.0199999996, 0, -2.5999999, 0)
 TextLabel.Size = UDim2.new(0, 209, 0, 50)
 TextLabel.Font = Enum.Font.SciFi
 TextLabel.Text = "Bajew GUI | Made by Lucky Charm"
@@ -70,7 +71,7 @@ TextLabel.TextSize = 14.000
 
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.Position = UDim2.new(0.0191387553, 0, 0.323943675, 0)
+TextButton_2.Position = UDim2.new(0.00947692059, 0, 0.233408675, 0)
 TextButton_2.Size = UDim2.new(0, 200, 0, 50)
 TextButton_2.Font = Enum.Font.SourceSans
 TextButton_2.Text = "Prison TP"
@@ -78,4 +79,16 @@ TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 28.000
 TextButton_2.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(944.724976, 99.9899368, 2319.72852, -0.837276638, 5.84250381e-09, 0.546779513, 7.9783975e-09, 1, 1.5319197e-09, -0.546779513, 5.64506486e-09, -0.837276638)
+end)
+
+TextButton_3.Parent = ScreenGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.0536218248, 0, 0.290797532, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Criminal TP"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 28.000
+TextButton_3.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-920.510986, 94.1270294, 2175.14941, -1, 2.69168865e-08, -1.53841562e-08, 2.69168865e-08, 1, -2.6961537e-08, 1.53841562e-08, -2.6961537e-08, -1)
 end)
